@@ -1,0 +1,53 @@
+<html>
+   <header>
+      <title>Slack Restrictor Option Page</title>
+      <style>
+         html {
+            font-size: 30px;
+         }
+         ul {
+            font-size: 1.2rem;
+         }
+         button {
+            margin-left: 1rem;
+            font-size: 1rem;
+            border: none;
+            color: white;
+            padding: 7px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+         }
+         input {
+            width: 30rem;
+            font-size: 1.2rem;
+         }
+         #add-channel{
+            list-style: none;
+         }
+         #add-slack-channel{
+            background-color: #4CAF50;
+         }
+         .delete-slack-channel{
+            background-color: #f44336;
+         }
+      </style>
+   </header>
+   <body>
+      <h2>
+      <p>
+      Register slack channel url like "https://***.slack.com/archives/***".</br>
+      Only one channel is valid for each workspace.
+      </p>
+      </h2>
+      <ul id="slack-channels">
+      </ul>
+      <ul id="add-channel">
+         <li>
+            <input id='new-slack-channel' widthtype="text"></input><button id="add-slack-channel">Add</button>
+         </li>
+      </ul>
+      <script src="script/jquery-3.4.1.min.js"></script>
+      <script src="script/options.js"></script>
+   </body>
+</html>
