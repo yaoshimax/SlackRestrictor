@@ -33,11 +33,11 @@ function enable(url){
          return;
       };
    }, 1000);
-   $('.p-workspace__channel_sidebar [role=listitem]').not(target_item.parent()).hide();
+   $('.p-workspace__channel_sidebar [role=listitem]').not(target_item.parent()).css('display', 'none');
    $('.p-workspace__channel_sidebar').css('pointer-events', 'none');
 }
 function disable(){
-   $('.p-workspace__channel_sidebar [role=listitem]').show();
+   $('.p-workspace__channel_sidebar [role=listitem]').css('display', '');
    $('.p-workspace__channel_sidebar').css('pointer-events', '');
    window.onpopstate = "";
 }
